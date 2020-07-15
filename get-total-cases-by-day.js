@@ -13,6 +13,7 @@ const getTotalCases = require('./get-total-cases.js');
 const getTotalCasesByDay = function(searchDate, data) {
   for(const row of data) {
     let rowDate = getDate(row);
+    
     if(rowDate === searchDate) {
       return getTotalCases(row);
     }

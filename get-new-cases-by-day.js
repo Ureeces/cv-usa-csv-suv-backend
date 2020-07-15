@@ -7,6 +7,18 @@
 // 3. If the date is equal to the date argument
 // 3a. Return the new cases of the current row and return it
 
+const getDate = require('./get-date.js');
+const getNewCases = require('./get-new-cases.js');
+
+const getNewCasesByDay = function(searchDate, data) {
+  for(const row of data) {
+    let rowDate = getDate(row);
+
+    if(rowDate === searchDate) {
+      return getNewCases(row);
+    }
+  }
+}
 
 
 
