@@ -9,6 +9,11 @@
 // 2. Set the empty array equal to the array given in step 2
 // 3. Return our array
 
+const getRow = function(str) {
+  const row = str.split(",");
+  return row;
+}
+
 
 
 
