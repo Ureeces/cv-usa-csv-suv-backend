@@ -7,7 +7,17 @@
 // 2. Get the date of current row
 // 3. If the date is equal to the date argument:
 // 3a. Get the total cases of the current row and return it 
+const getDate = require('./get-date.js');
+const getTotalCases = require('./get-total-cases.js');
 
+const getTotalCasesByDay = function(searchDate, data) {
+  for(const row of data) {
+    let rowDate = getDate(row);
+    if(rowDate === searchDate) {
+      return getTotalCases(row);
+    }
+  }
+}
 
 
 
