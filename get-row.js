@@ -14,10 +14,6 @@ const getRow = function(str) {
   return row;
 }
 
-
-
-
-
 if (typeof getRow === 'undefined') {
   getRow = undefined;
 }

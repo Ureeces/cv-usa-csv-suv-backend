@@ -8,8 +8,18 @@
 // 3. Loop through the split data
 // 4. Push each array from the split data into the array created in step 1
 // 5. At the end of loop, return row array
+const getRow = require('./get-row.js');
 
+const getRows = function(str) {
+  const rows = [];
+  const splitStr = str.split("\n");
 
+  for(const line of splitStr) {
+    rows.push(getRow(line));
+  }
+
+  return rows;
+}
 
 
 if (typeof getRows === 'undefined') {
