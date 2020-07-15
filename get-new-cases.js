@@ -5,6 +5,9 @@
 // Solution
 // 1. Return the data at index 5 of the row array
 
+const getNewCases = function(row) {
+  return row[5];
+}
 
 
 

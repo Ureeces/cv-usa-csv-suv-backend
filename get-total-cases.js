@@ -5,6 +5,9 @@
 // Solution
 // 1. Return the data located at index 4 of the row array
 
+const getTotalCases = function(row) {
+  return row[4];
+}
 
 
 
